@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <div class="title"><h2>cashIt</h2></div>
+      </div>
+    </nav>
+    <section>
+      <div class="input-card">
+        <div class="bill">
+          <div class="label">Bill Amount:</div>
+          <input
+            placeholder="Enter Bill Amount"
+            type="number"
+            min="1"
+            id="billAmt"
+          />
+          <button class="nextBtn">Next</button>
+        </div>
+        <div class="cash">
+          <div class="label">Cash Amount:</div>
+          <input
+            placeholder="Enter Cash Amount"
+            type="number"
+            min="1"
+            id="cashAmt"
+          />
+          <button class="checkBtn">Calculate</button>
+        </div>
+        <div class="errorMsg"></div>
+      </div>
+
+      <div class="output-card">
+        <div class="label3">Return Change:</div>
+        <div class="output">
+          <table>
+            <tr>
+              <th>No. of Notes</th>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+            </tr>
+            <tr>
+              <th>Note</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+          </table>
+        </div>
+        <div class="noReturn"></div>
+      </div>
+    </section>
+    <!-- <footer>
+      Made from Scratch with <span class="span1">⌛</span> and
+      <span class="span2">< ></span>
+    </footer> -->
+    <script src="index.js"></script>
+  </body>
+</html>

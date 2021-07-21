@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #0c1b2c;
+  font-family: "Cardo", serif;
+}
+
+.nav-header {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: "Satisfy", cursive;
+  font-size: 1.2rem;
+}
+
+.nav-header h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.input-card,
+.output-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.label {
+  font-size: 1.5em;
+}
+
+.label3 {
+  font-size: 1.5em;
+  margin: 1.2rem;
+}
+
+.input-card input {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  margin: 1.2rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
+}
+
+.input-card input:focus {
+  border: 2px solid #5a99e0;
+}
+
+.input-card button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.664);
+  outline: none;
+  border: none;
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
+}
+
+.input-card button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.2s ease-in;
+}
+
+.output-card table,
+th,
+td {
+  padding: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #5a99e0;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+.notes {
+  background-color: rgba(255, 255, 255, 0.664);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
+}
+
+th,
+td {
+  word-wrap: break-word;
+}
+
+.cash,
+.output-card {
+  display: none;
+}
+
+.errorMsg,
+.noReturn {
+  margin: 1.5rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* footer {
+  color: #5a99e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.span1,
+.span2 {
+  color: rgba(255, 255, 255, 0.664);
+  margin: 0 0.4em;
+} */
